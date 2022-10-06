@@ -15,8 +15,4 @@ public interface RediSearchCommands extends Commands {
 
     @Command("FT.SEARCH :indexName :term")
     Map<String, String> search(String indexName, String term);
-
-    @Command("FT.SEARCH :indexName :term HIGHLIGHT")
-    Map<String, String> searchWithHighlight(String indexName, String term);
-
 }
